@@ -1,4 +1,4 @@
-/* General Page Styles */
+/* General Page Styling */
 body {
     background-color: #1a1a1a;
     color: #e0e0e0;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Header Section */
+/* Header */
 header {
     background: #222;
     padding: 15px;
@@ -25,11 +25,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* TODO Section */
+/* Highlighted TODO Section */
 .todo {
     background: #ffcc00;
     color: #000;
@@ -40,7 +36,6 @@ nav a:hover {
     margin: 20px;
 }
 
-/* Titles and Headings */
 h2, h3 {
     text-align: center;
 }
@@ -50,49 +45,51 @@ h2, h3 {
     font-size: 24px;
 }
 
-/* Table Fix: Ensuring Column Alignment */
+/* Ensure Proper Table Formatting */
 .table-container {
-    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-x: auto;
     display: block;
     white-space: nowrap;
     width: 100%;
 }
 
+/* Table Styling */
 table {
     width: 100%;
     margin: auto;
     border-collapse: collapse;
     background: #333;
-    table-layout: fixed; /* Forces equal column width */
+    table-layout: fixed; /* Ensures uniform column widths */
 }
 
+/* Column-Specific Styling */
 th, td {
     padding: 10px;
     border: 1px solid #555;
     text-align: center;
-    vertical-align: middle;
+    white-space: nowrap; /* Prevents text from wrapping */
 }
 
-/* Specific Fix for IP Column Alignment */
-th:nth-child(4), td:nth-child(4) {
-    width: 160px; /* Fixed width to ensure uniformity */
-    text-align: center;
-    white-space: nowrap;
-}
+/* Fixed Width for Each Column */
+th:nth-child(1), td:nth-child(1) { width: 200px; } /* Domain */
+th:nth-child(2), td:nth-child(2) { width: 130px; } /* Creation Date */
+th:nth-child(3), td:nth-child(3) { width: 120px; } /* Registrar */
+th:nth-child(4), td:nth-child(4) { width: 150px; } /* IP */
+th:nth-child(5), td:nth-child(5) { width: 100px; } /* Status */
 
-/* Table Header Styles */
+/* Ensure Header Background & Text Color */
 th {
     background: #ffcc00;
     color: #000;
 }
 
-/* Status Styling */
+/* Suspended Status Text */
 .status-suspended {
     color: red;
     font-weight: bold;
 }
 
-/* Link Styling */
+/* Links */
 a {
     color: #ffcc00;
 }
@@ -101,7 +98,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Screenshot Section */
+/* Screenshot Formatting */
 .screenshot {
     text-align: center;
     margin-top: 20px;
