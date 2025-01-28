@@ -12,69 +12,42 @@
             background-color: #121212;
             color: #E0E0E0;
             font-family: 'Arial', sans-serif;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             padding: 20px;
-            line-height: 1.8;
+            line-height: 1.6;
         }
 
         h1 {
             color: #FF6363;
-            font-size: 2.2em;
+            font-size: 2em;
         }
 
         h2 {
             color: #FFCA28;
             margin-top: 20px;
-            font-size: 1.8em;
         }
 
         h3 {
             color: #64B5F6;
-            font-size: 1.5em;
         }
 
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        /* Sidebar Navigation */
-        .sidebar {
-            position: fixed;
-            left: 10px;
-            top: 50px;
-            width: 200px;
+        /* Mobile-Friendly Navigation */
+        .menu {
             background: #1E1E1E;
-            padding: 15px;
+            padding: 10px;
             border-radius: 5px;
+            text-align: center;
         }
 
-        .sidebar h3 {
-            color: #FFCA28;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar li {
-            margin: 10px 0;
-        }
-
-        .sidebar a {
+        .menu a {
             color: #64B5F6;
             text-decoration: none;
-            font-size: 1em;
-            display: block;
-            padding: 5px;
+            padding: 10px;
+            display: inline-block;
         }
 
-        .sidebar a:hover {
+        .menu a:hover {
             background: #333;
             border-radius: 3px;
         }
@@ -83,14 +56,18 @@
         .warning {
             background-color: #FFCA28;
             color: #121212;
-            padding: 15px;
+            padding: 10px;
             font-weight: bold;
             text-align: center;
             border-radius: 5px;
-            font-size: 1.1em;
         }
 
-        /* Table Styling */
+        /* Table Styling (Mobile Friendly) */
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -98,13 +75,13 @@
             background: #1E1E1E;
             color: #E0E0E0;
             border-radius: 5px;
-            overflow: hidden;
         }
 
         th, td {
             border: 1px solid #333;
-            padding: 12px;
+            padding: 10px;
             text-align: left;
+            white-space: nowrap; /* Prevent text from breaking in tables */
         }
 
         th {
@@ -112,13 +89,10 @@
             color: #FFCA28;
         }
 
-        tr:nth-child(even) {
-            background-color: #1B1B1B;
-        }
-
         img {
             width: 100%;
             max-width: 600px;
+            height: auto;
             margin-top: 20px;
             border: 1px solid #333;
             border-radius: 5px;
@@ -133,98 +107,65 @@
             text-decoration: underline;
         }
 
-        /* Push content right to make space for sidebar */
-        .content {
-            margin-left: 220px;
-        }
-
         /* Responsive Fixes */
         @media screen and (max-width: 768px) {
             body {
                 padding: 10px;
-                max-width: 100%;
             }
 
-            .sidebar {
-                position: relative;
-                width: 100%;
-                text-align: center;
-                padding: 10px;
-                margin-bottom: 20px;
-            }
-
-            .sidebar ul {
+            .menu {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                padding: 5px;
             }
 
-            .sidebar li {
-                margin: 5px;
+            .menu a {
+                flex: 1 1 auto;
+                padding: 8px;
+                font-size: 14px;
             }
 
-            .sidebar a {
-                font-size: 1.1em;
-                padding: 8px 12px;
-                display: inline-block;
+            .table-container {
+                overflow-x: auto;
             }
 
-            .content {
-                margin-left: 0;
+            table {
+                font-size: 14px;
             }
 
-            h1 {
-                font-size: 1.8em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            h3 {
-                font-size: 1.3em;
-            }
-
-            p {
-                font-size: 1em;
-                line-height: 1.6;
-            }
-
-            .warning {
-                font-size: 1em;
-                padding: 10px;
+            img {
+                max-width: 100%;
+                height: auto;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Sidebar Navigation -->
-    <div class="sidebar">
-        <h3>📌 Quick Navigation</h3>
-        <ul>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#domains">Suspended Domains</a></li>
-            <li><a href="#about">About the Scam</a></li>
-            <li><a href="#screenshots">Screenshots</a></li>
-            <li><a href="#crypto">Crypto Addresses</a></li>
-        </ul>
+    <!-- Mobile-Friendly Navigation -->
+    <div class="menu">
+        <a href="#mission">Mission</a>
+        <a href="#domains">Suspended Domains</a>
+        <a href="#about">About the Scam</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#crypto">Crypto Addresses</a>
     </div>
 
-    <div class="content">
-        <div class="warning">
-            🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time. We are working on automatically detecting new scam domains as they appear and updating this tracker accordingly.
-        </div>
+    <div class="warning">
+        🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time. We are working on automatically detecting new scam domains as they appear and updating this tracker accordingly.
+    </div>
 
-        <h1>BDEX Scam Domain Tracker</h1>
-        
-        <h2 id="mission">Our Mission</h2>
-        <p><strong>
+    <h1>BDEX Scam Domain Tracker</h1>
+    
+    <h2 id="mission">Our Mission</h2>
+    <p><strong>
         Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains, this page appears in search results.  
         By listing and tracking these scam domains, we increase awareness and make it harder for scammers of the BDEX Trading Platform to operate under new names.
-        </strong></p>
+    </strong></p>
 
-        <h2 id="domains">Suspended Scam Domains (Newest to Oldest)</h2>
+    <h2 id="domains">Suspended Scam Domains (Newest to Oldest)</h2>
+    <div class="table-container">
         <table>
             <tr>
                 <th>Domain</th>
@@ -234,21 +175,26 @@
                 <th>Status</th>
             </tr>
             <tr><td>bteglobalx.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.94.59</td><td>Suspended</td></tr>
+            <tr><td>BapPxtDe.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+            <tr><td>bwebglobalex.com</td><td>2025-01-23</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended (after delay)</td></tr>
+            <tr><td>bdexxtps.com</td><td>2025-01-22</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+            <tr><td>bdesxtp.com</td><td>2024-12-16</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+            <tr><td>bdswg.com</td><td>2024-07-25</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
         </table>
+    </div>
 
-        <h2 id="about">About This Scam</h2>
-        <p>The BDEX trading platform is a fraudulent operation that has repeatedly registered new domains through GNAME to evade detection. Victims are lured into depositing funds, only to be prevented from withdrawing their money.</p>
-        <p><strong>Stay alert and do not trust any site associated with this operation.</strong></p>
+    <h2 id="about">About This Scam</h2>
+    <p>The BDEX trading platform is a fraudulent operation that has repeatedly registered new domains through GNAME to evade detection.</p>
 
-        <h2 id="screenshots">Scam Website Screenshots</h2>
-        <p>Here are actual screenshots of the fraudulent site to help identify similar scams.</p>
+    <h2 id="screenshots">Scam Website Screenshots</h2>
+    <h3>Homepage</h3>
+    <img src="bdex-home.png" alt="BDEX Scam Homepage">
 
-        <h3>Homepage</h3>
-        <img src="bdex-home.png" alt="BDEX Scam Homepage">
+    <h3>Deposit Page</h3>
+    <img src="bdex-deposit.png" alt="BDEX Scam Deposit Address">
 
-        <h2 id="crypto">Crypto Deposit Addresses</h2>
-        <p>Below is a cryptocurrency deposit address associated with this fraudulent scam operation.</p>
-
+    <h2 id="crypto">Crypto Deposit Addresses</h2>
+    <div class="table-container">
         <table>
             <tr>
                 <th>Cryptocurrency</th>
