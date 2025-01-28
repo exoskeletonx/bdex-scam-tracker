@@ -1,3 +1,4 @@
+/* General Page Styles */
 body {
     background-color: #1a1a1a;
     color: #e0e0e0;
@@ -6,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Header Section */
 header {
     background: #222;
     padding: 15px;
@@ -23,6 +25,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* TODO Section */
 .todo {
     background: #ffcc00;
     color: #000;
@@ -33,6 +40,7 @@ nav a {
     margin: 20px;
 }
 
+/* Titles and Headings */
 h2, h3 {
     text-align: center;
 }
@@ -42,10 +50,11 @@ h2, h3 {
     font-size: 24px;
 }
 
+/* Table Container and Table Styles */
 .table-container {
-    overflow-x: auto;
+    overflow-x: auto; /* Enable scrolling for tables */
     display: block;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevent breaking of text */
     width: 100%;
 }
 
@@ -62,16 +71,26 @@ th, td {
     text-align: center;
 }
 
+/* Fixed IP Column Alignment */
+th.ip-column, td.ip-column {
+    min-width: 150px; /* Ensure uniform width for IP column */
+    text-align: center;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Table Header Styles */
 th {
     background: #ffcc00;
     color: #000;
 }
 
+/* Status Styling */
 .status-suspended {
     color: red;
     font-weight: bold;
 }
 
+/* Link Styling */
 a {
     color: #ffcc00;
 }
@@ -80,6 +99,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Screenshot Section */
 .screenshot {
     text-align: center;
     margin-top: 20px;
