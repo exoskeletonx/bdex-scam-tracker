@@ -15,21 +15,29 @@
             max-width: 900px;
             margin: auto;
             padding: 20px;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         h1 {
             color: #FF6363;
-            font-size: 2em;
+            font-size: 2.2em;
         }
 
         h2 {
             color: #FFCA28;
             margin-top: 20px;
+            font-size: 1.8em;
         }
 
         h3 {
             color: #64B5F6;
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
 
         /* Sidebar Navigation */
@@ -75,10 +83,11 @@
         .warning {
             background-color: #FFCA28;
             color: #121212;
-            padding: 10px;
+            padding: 15px;
             font-weight: bold;
             text-align: center;
             border-radius: 5px;
+            font-size: 1.1em;
         }
 
         /* Table Styling */
@@ -94,7 +103,7 @@
 
         th, td {
             border: 1px solid #333;
-            padding: 10px;
+            padding: 12px;
             text-align: left;
         }
 
@@ -127,6 +136,64 @@
         /* Push content right to make space for sidebar */
         .content {
             margin-left: 220px;
+        }
+
+        /* Responsive Fixes */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+                max-width: 100%;
+            }
+
+            .sidebar {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .sidebar li {
+                margin: 5px;
+            }
+
+            .sidebar a {
+                font-size: 1.1em;
+                padding: 8px 12px;
+                display: inline-block;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+
+            p {
+                font-size: 1em;
+                line-height: 1.6;
+            }
+
+            .warning {
+                font-size: 1em;
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -167,11 +234,6 @@
                 <th>Status</th>
             </tr>
             <tr><td>bteglobalx.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.94.59</td><td>Suspended</td></tr>
-            <tr><td>BapPxtDe.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-            <tr><td>bwebglobalex.com</td><td>2025-01-23</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended (after delay)</td></tr>
-            <tr><td>bdexxtps.com</td><td>2025-01-22</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-            <tr><td>bdesxtp.com</td><td>2024-12-16</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-            <tr><td>bdswg.com</td><td>2024-07-25</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
         </table>
 
         <h2 id="about">About This Scam</h2>
@@ -184,11 +246,8 @@
         <h3>Homepage</h3>
         <img src="bdex-home.png" alt="BDEX Scam Homepage">
 
-        <h3>Deposit Page</h3>
-        <img src="bdex-deposit.png" alt="BDEX Scam Deposit Address">
-
         <h2 id="crypto">Crypto Deposit Addresses</h2>
-        <p>Below is a cryptocurrency deposit address associated with this fraudulent scam operation. If you encounter this address, it is likely being used to receive stolen funds.</p>
+        <p>Below is a cryptocurrency deposit address associated with this fraudulent scam operation.</p>
 
         <table>
             <tr>
