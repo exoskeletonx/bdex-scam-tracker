@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #1c1c1c; /* Dark gray instead of black */
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,15 +11,14 @@ body {
     margin: auto;
 }
 
-/* Quick Navigation */
 .quick-nav {
-    background: black;
+    background: #1c1c1c; /* Matches the background */
     text-align: center;
     padding: 10px;
 }
 
 .quick-nav h2 {
-    color: yellow;
+    color: #FFD700; /* Softer gold */
 }
 
 .quick-nav ul {
@@ -33,11 +32,10 @@ body {
 }
 
 .quick-nav a {
-    color: lightblue;
+    color: #9FC3F7; /* Softer blue */
     text-decoration: none;
 }
 
-/* TODO Banner */
 .todo {
     background: yellow;
     color: black;
@@ -47,7 +45,6 @@ body {
     border-radius: 5px;
 }
 
-/* Titles */
 .tracker-title {
     text-align: center;
     color: red;
@@ -57,7 +54,7 @@ body {
 }
 
 .gold-title {
-    color: gold;
+    color: #E5C100; /* Muted gold instead of harsh yellow */
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -69,44 +66,34 @@ body {
     text-align: center;
 }
 
-/* Table Styles */
-.table-container {
-    overflow-x: auto;
-    display: block;
-    white-space: nowrap;
+.crypto-link {
+    color: #E5C100; /* Matching muted gold */
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    border: 2px solid gold;
-    padding: 8px;
-    text-align: center;
 }
 
 th {
-    background-color: gold;
-    color: black;
+    background-color: #333333; /* Dark gray */
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #E5C100; /* Muted gold */
 }
 
 td {
-    background-color: black;
-    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #555555; /* Softer border */
 }
 
-/* Suspended Status */
-.suspended {
-    color: green;
-    font-weight: bold;
+.status-suspended {
+    color: lightgreen;
 }
 
-/* Crypto Section */
-.crypto-link {
-    color: gold;
-    font-weight: bold;
-    text-decoration: underline;
+.status-active {
+    color: red;
 }
