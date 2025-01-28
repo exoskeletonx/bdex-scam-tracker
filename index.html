@@ -2,93 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BDEX Scam Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDEX Scam Domain Tracker</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #ff4444;
+            text-align: center;
+        }
+        h2 {
+            color: yellow;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .alert-box {
+            background-color: yellow;
+            color: black;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #222;
+        }
+        /* Responsive Table Wrapper */
+        .table-container {
+            overflow-x: auto;
+        }
+        /* Navigation */
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .navigation a {
+            color: lightblue;
+            margin: 10px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .screenshots img {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 10px auto;
+            border: 2px solid white;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
+    <div class="container">
+        <div class="navigation">
+            <h2>📌 <span style="color:yellow;">Quick Navigation</span></h2>
+            <a href="#mission">Mission</a>
+            <a href="#domains">Suspended Domains</a>
+            <a href="#about">About the Scam</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#crypto">Crypto Addresses</a>
+        </div>
+
+        <div class="alert-box">
+            🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time. We are working on automatically detecting new scam domains as they appear and updating this tracker accordingly.
+        </div>
+
         <h1>BDEX Scam Domain Tracker</h1>
-        <p class="alert">🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time.</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#suspended-domains">Suspended Domains</a></li>
-            <li><a href="#about">About the Scam</a></li>
-            <li><a href="#screenshots">Screenshots</a></li>
-            <li><a href="#crypto-addresses">Crypto Addresses</a></li>
-        </ul>
-    </nav>
-
-    <section id="mission">
-        <h2>Our Mission</h2>
+        <h2 id="mission">Our Mission</h2>
         <p>Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains, this page appears in search results. By listing and tracking these scam domains, we increase awareness and make it harder for scammers of the BDEX Trading Platform to operate under new names.</p>
-    </section>
 
-    <section id="suspended-domains">
-        <h2>Suspended Scam Domains (Newest to Oldest)</h2>
+        <h2 id="domains">Suspended Scam Domains (Newest to Oldest)</h2>
         <div class="table-container">
             <table>
-                <thead>
-                    <tr>
-                        <th>Domain</th>
-                        <th>Creation Date</th>
-                        <th>Registrar</th>
-                        <th>IP</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>bteglobalx.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.94.59</td><td>Suspended</td></tr>
-                    <tr><td>BapPxtDe.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-                    <tr><td>bwebglobalex.com</td><td>2025-01-23</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended (after delay)</td></tr>
-                    <tr><td>bdexxtps.com</td><td>2025-01-22</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-                    <tr><td>bdesxtp.com</td><td>2024-12-16</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-                    <tr><td>bdswg.com</td><td>2024-07-25</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-                </tbody>
+                <tr>
+                    <th>Domain</th>
+                    <th>Creation Date</th>
+                    <th>Registrar</th>
+                    <th>IP</th>
+                    <th>Status</th>
+                </tr>
+                <tr><td>bteglobalx.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.94.59</td><td>Suspended</td></tr>
+                <tr><td>BapPxtDe.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+                <tr><td>bwebglobalex.com</td><td>2025-01-23</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended (after delay)</td></tr>
+                <tr><td>bdexxtps.com</td><td>2025-01-22</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+                <tr><td>bdesxtp.com</td><td>2024-12-16</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+                <tr><td>bdswg.com</td><td>2024-07-25</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
             </table>
         </div>
-    </section>
 
-    <section id="crypto-addresses">
-        <h2>Crypto Deposit Addresses</h2>
+        <h2 id="crypto">Crypto Deposit Addresses</h2>
         <div class="table-container">
             <table>
-                <thead>
-                    <tr>
-                        <th>Cryptocurrency</th>
-                        <th>Address</th>
-                        <th>Total Received</th>
-                        <th>Blockchain Explorer</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Bitcoin (BTC)</td>
-                        <td>bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp</td>
-                        <td>Over $1.4M in BTC</td>
-                        <td><a href="#">View on Blockchain Explorer</a></td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>Cryptocurrency</th>
+                    <th>Address</th>
+                    <th>Total Received</th>
+                    <th>Blockchain Explorer</th>
+                </tr>
+                <tr>
+                    <td>Bitcoin (BTC)</td>
+                    <td>bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp</td>
+                    <td>Over $1.4M in BTC</td>
+                    <td><a href="#" style="color: lightblue;">View on Blockchain Explorer</a></td>
+                </tr>
             </table>
         </div>
-    </section>
 
-    <section id="about">
-        <h2>About This Scam</h2>
+        <h2 id="about">About This Scam</h2>
         <p>The BDEX trading platform is a fraudulent operation that has repeatedly registered new domains through GNAME to evade detection.</p>
-    </section>
 
-    <section id="screenshots">
-        <h2>Scam Website Screenshots</h2>
+        <h2 id="screenshots">Scam Website Screenshots</h2>
         <div class="screenshots">
-            <img src="screenshot1.jpg" alt="Screenshot 1">
-            <img src="screenshot2.jpg" alt="Screenshot 2">
+            <p>Screenshot 1</p>
+            <img src="bdex-home.png" alt="Scam Homepage">
+            <p>Screenshot 2</p>
+            <img src="bdex-deposit.png" alt="Scam Deposit Page">
         </div>
-    </section>
+
+    </div>
 
 </body>
 </html>
