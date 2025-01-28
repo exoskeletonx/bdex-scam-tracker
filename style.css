@@ -1,5 +1,5 @@
 body {
-    background-color: #1c1c1c; /* Dark gray instead of black */
+    background-color: #222; /* Dark Gray */
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,13 +12,13 @@ body {
 }
 
 .quick-nav {
-    background: #1c1c1c; /* Matches the background */
+    background: #222; /* Match background */
     text-align: center;
     padding: 10px;
 }
 
 .quick-nav h2 {
-    color: #FFD700; /* Softer gold */
+    color: yellow;
 }
 
 .quick-nav ul {
@@ -32,7 +32,7 @@ body {
 }
 
 .quick-nav a {
-    color: #9FC3F7; /* Softer blue */
+    color: lightblue;
     text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .gold-title {
-    color: #E5C100; /* Muted gold instead of harsh yellow */
+    color: #e6c200; /* Softer gold */
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -67,33 +67,44 @@ body {
 }
 
 .crypto-link {
-    color: #E5C100; /* Matching muted gold */
+    color: #e6c200;
     font-weight: bold;
     text-decoration: underline;
 }
 
+/* Table container for horizontal scrolling */
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin: auto;
+    background: #333;
+}
+
+th, td {
+    border: 1px solid #666;
+    padding: 10px;
+    text-align: left;
 }
 
 th {
-    background-color: #333333; /* Dark gray */
-    color: white;
-    padding: 10px;
-    text-align: left;
-    border-bottom: 2px solid #E5C100; /* Muted gold */
+    background: #444;
+    color: #e6c200; /* Softer gold for headers */
 }
 
-td {
-    padding: 10px;
-    border-bottom: 1px solid #555555; /* Softer border */
-}
+/* Responsive scrolling for smaller screens */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
 
-.status-suspended {
-    color: lightgreen;
-}
-
-.status-active {
-    color: red;
+    table {
+        min-width: 700px;
+    }
 }
