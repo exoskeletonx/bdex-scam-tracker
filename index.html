@@ -3,187 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BDEX Scam Domain Tracker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        h1, h2 {
-            color: #ff4444;
-            text-align: center;
-        }
-
-        .navigation {
-            background-color: #222;
-            padding: 10px;
-            text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .navigation a {
-            color: #00aaff;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 8px 12px;
-        }
-
-        .navigation a:hover {
-            text-decoration: underline;
-        }
-
-        .alert {
-            background-color: yellow;
-            color: black;
-            padding: 15px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .table-container {
-            width: 100%;
-            overflow-x: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #222;
-        }
-
-        th, td {
-            border: 1px solid #444;
-            padding: 10px;
-            text-align: left;
-            color: #fff;
-            white-space: nowrap;
-        }
-
-        th {
-            background-color: #333;
-            font-weight: bold;
-        }
-
-        .crypto-table td {
-            font-size: 14px;
-            white-space: nowrap;
-        }
-
-        .crypto-table a {
-            color: #00ff00;
-            text-decoration: none;
-        }
-
-        .crypto-table a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                font-size: 14px;
-            }
-
-            .navigation {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            table {
-                font-size: 12px;
-            }
-
-            .table-container {
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-            }
-
-            .crypto-table td {
-                font-size: 12px;
-            }
-        }
-    </style>
+    <title>BDEX Scam Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="navigation">
-            <a href="#mission">Mission</a>
-            <a href="#suspended">Suspended Domains</a>
-            <a href="#about">About the Scam</a>
-            <a href="#screenshots">Screenshots</a>
-            <a href="#crypto">Crypto Addresses</a>
-        </div>
-
-        <div class="alert">
-            🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time.
-        </div>
-
+    <header>
         <h1>BDEX Scam Domain Tracker</h1>
+        <p class="alert">🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time.</p>
+    </header>
 
-        <h2 id="mission">Our Mission</h2>
-        <p>
-            Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains,
-            this page appears in search results. By listing and tracking these scam domains, we increase awareness and make it harder
-            for scammers of the BDEX Trading Platform to operate under new names.
-        </p>
+    <nav>
+        <ul>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#suspended-domains">Suspended Domains</a></li>
+            <li><a href="#about">About the Scam</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#crypto-addresses">Crypto Addresses</a></li>
+        </ul>
+    </nav>
 
-        <h2 id="suspended">Suspended Scam Domains (Newest to Oldest)</h2>
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains, this page appears in search results. By listing and tracking these scam domains, we increase awareness and make it harder for scammers of the BDEX Trading Platform to operate under new names.</p>
+    </section>
+
+    <section id="suspended-domains">
+        <h2>Suspended Scam Domains (Newest to Oldest)</h2>
         <div class="table-container">
             <table>
-                <tr>
-                    <th>Domain</th>
-                    <th>Creation Date</th>
-                    <th>Registrar</th>
-                    <th>IP</th>
-                    <th>Status</th>
-                </tr>
-                <tr><td>bteglobalx.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.94.59</td><td>Suspended</td></tr>
-                <tr><td>BapPxtDe.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-                <tr><td>bwebglobalex.com</td><td>2025-01-23</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended (after delay)</td></tr>
-                <tr><td>bdexxtps.com</td><td>2025-01-22</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-                <tr><td>bdesxtp.com</td><td>2024-12-16</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-                <tr><td>bdswg.com</td><td>2024-07-25</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Creation Date</th>
+                        <th>Registrar</th>
+                        <th>IP</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>bteglobalx.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.94.59</td><td>Suspended</td></tr>
+                    <tr><td>BapPxtDe.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+                    <tr><td>bwebglobalex.com</td><td>2025-01-23</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended (after delay)</td></tr>
+                    <tr><td>bdexxtps.com</td><td>2025-01-22</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+                    <tr><td>bdesxtp.com</td><td>2024-12-16</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+                    <tr><td>bdswg.com</td><td>2024-07-25</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+                </tbody>
             </table>
         </div>
+    </section>
 
-        <h2 id="crypto">Crypto Deposit Addresses</h2>
+    <section id="crypto-addresses">
+        <h2>Crypto Deposit Addresses</h2>
         <div class="table-container">
-            <table class="crypto-table">
-                <tr>
-                    <th>Cryptocurrency</th>
-                    <th>Address</th>
-                    <th>Total Received</th>
-                    <th>Blockchain Explorer</th>
-                </tr>
-                <tr>
-                    <td>Bitcoin (BTC)</td>
-                    <td>bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp</td>
-                    <td>Over $1.4M in BTC</td>
-                    <td><a href="https://www.blockchain.com/explorer" target="_blank">View on Blockchain Explorer</a></td>
-                </tr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cryptocurrency</th>
+                        <th>Address</th>
+                        <th>Total Received</th>
+                        <th>Blockchain Explorer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bitcoin (BTC)</td>
+                        <td>bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp</td>
+                        <td>Over $1.4M in BTC</td>
+                        <td><a href="#">View on Blockchain Explorer</a></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
+    </section>
 
-        <h2 id="about">About This Scam</h2>
-        <p>
-            The BDEX trading platform is a fraudulent operation that has repeatedly registered new domains through GNAME to evade detection.
-            Victims are lured into depositing funds, only to be prevented from withdrawing their money.
-        </p>
-    </div>
+    <section id="about">
+        <h2>About This Scam</h2>
+        <p>The BDEX trading platform is a fraudulent operation that has repeatedly registered new domains through GNAME to evade detection.</p>
+    </section>
+
+    <section id="screenshots">
+        <h2>Scam Website Screenshots</h2>
+        <div class="screenshots">
+            <img src="screenshot1.jpg" alt="Screenshot 1">
+            <img src="screenshot2.jpg" alt="Screenshot 2">
+        </div>
+    </section>
 
 </body>
 </html>
