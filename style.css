@@ -69,13 +69,15 @@ th, td {
     padding: 10px;
     border: 1px solid #555;
     text-align: center;
+    vertical-align: middle;
 }
 
-/* Fixed IP Column Alignment */
-th.ip-column, td.ip-column {
-    min-width: 150px; /* Ensure uniform width for IP column */
-    text-align: center;
-    white-space: nowrap; /* Prevents wrapping */
+/* Consistent IP Column Alignment */
+th:nth-child(4), td:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 160px; /* Fixed width */
 }
 
 /* Table Header Styles */
