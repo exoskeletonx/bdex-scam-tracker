@@ -12,15 +12,16 @@
             background-color: #121212;
             color: #E0E0E0;
             font-family: 'Arial', sans-serif;
-            max-width: 1000px;
             margin: auto;
             padding: 20px;
             line-height: 1.6;
+            max-width: 100%;
         }
 
         h1 {
             color: #FF6363;
             font-size: 2em;
+            text-align: center;
         }
 
         h2 {
@@ -32,22 +33,22 @@
             color: #64B5F6;
         }
 
-        /* Mobile-Friendly Navigation */
-        .menu {
+        /* Responsive Navigation */
+        .nav-container {
             background: #1E1E1E;
             padding: 10px;
-            border-radius: 5px;
             text-align: center;
+            border-radius: 5px;
         }
 
-        .menu a {
+        .nav-container a {
             color: #64B5F6;
             text-decoration: none;
-            padding: 10px;
+            padding: 10px 15px;
             display: inline-block;
         }
 
-        .menu a:hover {
+        .nav-container a:hover {
             background: #333;
             border-radius: 3px;
         }
@@ -62,26 +63,28 @@
             border-radius: 5px;
         }
 
-        /* Table Styling (Mobile Friendly) */
+        /* Responsive Table Styling */
         .table-container {
-            overflow-x: auto;
             width: 100%;
+            overflow-x: auto;
+            margin-top: 20px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
             background: #1E1E1E;
             color: #E0E0E0;
             border-radius: 5px;
+            overflow: hidden;
+            min-width: 600px; /* Ensures table does not shrink too much */
         }
 
         th, td {
             border: 1px solid #333;
             padding: 10px;
             text-align: left;
-            white-space: nowrap; /* Prevent text from breaking in tables */
+            white-space: nowrap; /* Keeps content in a single line */
         }
 
         th {
@@ -89,10 +92,13 @@
             color: #FFCA28;
         }
 
+        tr:nth-child(even) {
+            background-color: #1B1B1B;
+        }
+
         img {
             width: 100%;
             max-width: 600px;
-            height: auto;
             margin-top: 20px;
             border: 1px solid #333;
             border-radius: 5px;
@@ -107,44 +113,35 @@
             text-decoration: underline;
         }
 
-        /* Responsive Fixes */
-        @media screen and (max-width: 768px) {
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
             body {
                 padding: 10px;
             }
 
-            .menu {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 5px;
+            h1 {
+                font-size: 1.8em;
             }
 
-            .menu a {
-                flex: 1 1 auto;
+            .nav-container a {
+                display: block;
                 padding: 8px;
-                font-size: 14px;
-            }
-
-            .table-container {
-                overflow-x: auto;
             }
 
             table {
-                font-size: 14px;
+                font-size: 0.9em;
             }
 
-            img {
-                max-width: 100%;
-                height: auto;
+            th, td {
+                padding: 8px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Mobile-Friendly Navigation -->
-    <div class="menu">
+    <!-- Navigation -->
+    <div class="nav-container">
         <a href="#mission">Mission</a>
         <a href="#domains">Suspended Domains</a>
         <a href="#about">About the Scam</a>
@@ -160,8 +157,8 @@
     
     <h2 id="mission">Our Mission</h2>
     <p><strong>
-        Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains, this page appears in search results.  
-        By listing and tracking these scam domains, we increase awareness and make it harder for scammers of the BDEX Trading Platform to operate under new names.
+    Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains, this page appears in search results.  
+    By listing and tracking these scam domains, we increase awareness and make it harder for scammers of the BDEX Trading Platform to operate under new names.
     </strong></p>
 
     <h2 id="domains">Suspended Scam Domains (Newest to Oldest)</h2>
@@ -185,8 +182,11 @@
 
     <h2 id="about">About This Scam</h2>
     <p>The BDEX trading platform is a fraudulent operation that has repeatedly registered new domains through GNAME to evade detection.</p>
+    <p><strong>Stay alert and do not trust any site associated with this operation.</strong></p>
 
     <h2 id="screenshots">Scam Website Screenshots</h2>
+    <p>Here are actual screenshots of the fraudulent site to help identify similar scams.</p>
+
     <h3>Homepage</h3>
     <img src="bdex-home.png" alt="BDEX Scam Homepage">
 
