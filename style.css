@@ -11,7 +11,7 @@ body {
     margin: auto;
 }
 
-
+/* Quick Navigation */
 .quick-nav {
     background: black;
     text-align: center;
@@ -37,6 +37,7 @@ body {
     text-decoration: none;
 }
 
+/* TODO Banner */
 .todo {
     background: yellow;
     color: black;
@@ -46,6 +47,7 @@ body {
     border-radius: 5px;
 }
 
+/* Titles */
 .tracker-title {
     text-align: center;
     color: red;
@@ -67,22 +69,44 @@ body {
     text-align: center;
 }
 
-/* Table scroll fix */
+/* Table Styles */
 .table-container {
     overflow-x: auto;
     display: block;
     white-space: nowrap;
 }
 
-/* Crypto address */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 2px solid gold;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: gold;
+    color: black;
+}
+
+td {
+    background-color: black;
+    color: white;
+}
+
+/* Suspended Status */
+.suspended {
+    color: green;
+    font-weight: bold;
+}
+
+/* Crypto Section */
 .crypto-link {
     color: gold;
     font-weight: bold;
     text-decoration: underline;
-}
-
-/* Suspended status styling */
-.suspended {
-    color: green;
-    font-weight: bold;
 }
