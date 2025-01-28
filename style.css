@@ -88,6 +88,12 @@ td {
     text-align: center;
 }
 
+.crypto-link {
+    color: gold;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .screenshot {
     text-align: center;
     margin: 20px 0;
