@@ -11,6 +11,7 @@ body {
     margin: auto;
 }
 
+/* Quick Navigation */
 .quick-nav {
     background: black;
     text-align: center;
@@ -36,6 +37,7 @@ body {
     text-decoration: none;
 }
 
+/* TODO Section */
 .todo {
     background: yellow;
     color: black;
@@ -45,6 +47,7 @@ body {
     border-radius: 5px;
 }
 
+/* Main Title */
 .tracker-title {
     text-align: center;
     color: red;
@@ -53,21 +56,50 @@ body {
     margin-top: 20px;
 }
 
+/* Gold Titles */
 .gold-title {
     color: gold;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    text-shadow: 0px 0px 5px rgba(255, 215, 0, 0.8);
 }
 
+/* Bold Text for Mission Statement */
 .bold-text {
     font-weight: bold;
     font-size: 16px;
     text-align: center;
 }
 
+/* Crypto Address Styling */
 .crypto-link {
-    color: gold;
+    color: gold !important;
     font-weight: bold;
     text-decoration: underline;
+    word-break: break-all;
+}
+
+/* Suspended Status Styling */
+.status-suspended {
+    color: green;
+    font-weight: bold;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid gold;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(to right, gold, orange);
+    color: black;
 }
