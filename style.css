@@ -50,11 +50,11 @@ h2, h3 {
     font-size: 24px;
 }
 
-/* Table Container and Table Styles */
+/* Table Fix: Ensuring Column Alignment */
 .table-container {
-    overflow-x: auto; /* Enable scrolling for tables */
+    overflow-x: auto; /* Enables horizontal scrolling */
     display: block;
-    white-space: nowrap; /* Prevent breaking of text */
+    white-space: nowrap;
     width: 100%;
 }
 
@@ -63,6 +63,7 @@ table {
     margin: auto;
     border-collapse: collapse;
     background: #333;
+    table-layout: fixed; /* Forces equal column width */
 }
 
 th, td {
@@ -72,12 +73,11 @@ th, td {
     vertical-align: middle;
 }
 
-/* Consistent IP Column Alignment */
+/* Specific Fix for IP Column Alignment */
 th:nth-child(4), td:nth-child(4) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 160px; /* Fixed width */
+    width: 160px; /* Fixed width to ensure uniformity */
+    text-align: center;
+    white-space: nowrap;
 }
 
 /* Table Header Styles */
