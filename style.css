@@ -1,24 +1,30 @@
+/* General Styles */
 body {
-    background-color: #222; /* Dark Gray */
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark gray instead of full black */
+    color: #e0e0e0; /* Soft white for better contrast */
+    font-family: 'Courier New', Courier, monospace; /* Terminal-style font */
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 .container {
     width: 90%;
     margin: auto;
+    padding: 20px;
 }
 
+/* Quick Navigation */
 .quick-nav {
-    background: #222; /* Match background */
+    background: #222;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    border-bottom: 3px solid #ffcc00; /* Gold accent */
 }
 
 .quick-nav h2 {
-    color: yellow;
+    color: #ffd700;
+    font-size: 22px;
 }
 
 .quick-nav ul {
@@ -28,83 +34,107 @@ body {
 
 .quick-nav li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 12px;
 }
 
 .quick-nav a {
-    color: lightblue;
+    color: #66c2ff; /* Lighter blue for readability */
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* TODO Section (Gold Highlight) */
 .todo {
-    background: yellow;
-    color: black;
-    padding: 15px;
+    background: #ffd700; /* Gold */
+    color: #222;
+    padding: 20px;
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
+    font-size: 16px;
 }
 
+/* Main Title */
 .tracker-title {
     text-align: center;
-    color: red;
-    font-size: 28px;
+    color: #ff4444; /* Bright red */
+    font-size: 30px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
+/* Section Titles */
 .gold-title {
-    color: #e6c200; /* Softer gold */
+    color: #ffcc00; /* Softer gold */
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
+/* Body Text */
 .bold-text {
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+    padding: 10px;
 }
 
-.crypto-link {
-    color: #e6c200;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-/* Table container for horizontal scrolling */
-.table-container {
-    overflow-x: auto;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-/* Table styling */
+/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: auto;
-    background: #333;
+    margin-top: 10px;
+    background: #252525;
+    color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 th, td {
-    border: 1px solid #666;
-    padding: 10px;
+    padding: 12px;
+    border: 1px solid #444;
     text-align: left;
 }
 
 th {
-    background: #444;
-    color: #e6c200; /* Softer gold for headers */
+    background: #333;
+    color: #ffd700; /* Gold */
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-/* Responsive scrolling for smaller screens */
-@media (max-width: 768px) {
-    .table-container {
-        overflow-x: auto;
-    }
+td {
+    background: #2a2a2a;
+}
 
-    table {
-        min-width: 700px;
-    }
+/* Add slight spacing inside tables */
+tr:nth-child(even) {
+    background: #303030; /* Dark gray for alternate rows */
+}
+
+/* Status Text */
+.status-active {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.status-suspended {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+/* Crypto Links */
+.crypto-link {
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Mobile Scrolling Fix */
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 20px;
 }
