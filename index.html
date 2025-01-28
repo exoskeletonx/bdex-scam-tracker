@@ -2,85 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tracking and exposing the fraudulent BDEX trading scam and its associated domains registered under GNAME.">
-    <meta name="keywords" content="bteglobalx.com, bdex scam, crypto scam, GNAME scam domains, fraudulent trading sites">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BDEX Scam Domain Tracker</title>
     <style>
-        /* Dark Mode Styling */
         body {
-            background-color: #121212;
-            color: #E0E0E0;
-            font-family: 'Arial', sans-serif;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        h1 {
-            color: #FF6363;
-            font-size: 2em;
-            text-align: center;
-        }
-
-        h2 {
-            color: #FFCA28;
-            margin-top: 20px;
-        }
-
-        h3 {
-            color: #64B5F6;
-        }
-
-        /* Sidebar Navigation */
-        .sidebar {
-            background: #1E1E1E;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .sidebar h3 {
-            color: #FFCA28;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-
-        .sidebar ul {
-            list-style: none;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
             padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #ff4444;
+            text-align: center;
+        }
+
+        .navigation {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 10px;
         }
 
-        .sidebar li {
-            margin: 5px 10px;
-        }
-
-        .sidebar a {
-            color: #64B5F6;
+        .navigation a {
+            color: #00aaff;
             text-decoration: none;
-            font-size: 1em;
-            padding: 5px;
+            font-size: 18px;
+            padding: 8px 12px;
         }
 
-        .sidebar a:hover {
-            background: #333;
-            border-radius: 3px;
+        .navigation a:hover {
+            text-decoration: underline;
         }
 
-        /* Warning Box */
-        .warning {
-            background-color: #FFCA28;
-            color: #121212;
-            padding: 10px;
-            font-weight: bold;
+        .alert {
+            background-color: yellow;
+            color: black;
+            padding: 15px;
             text-align: center;
-            border-radius: 5px;
+            font-weight: bold;
         }
 
-        /* Responsive Table */
         .table-container {
             width: 100%;
             overflow-x: auto;
@@ -89,91 +61,87 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            background: #1E1E1E;
-            color: #E0E0E0;
-            border-radius: 5px;
-            overflow: hidden;
-            white-space: nowrap;
+            margin-top: 20px;
+            background-color: #222;
         }
 
         th, td {
-            border: 1px solid #333;
+            border: 1px solid #444;
             padding: 10px;
             text-align: left;
+            color: #fff;
+            white-space: nowrap;
         }
 
         th {
-            background-color: #242424;
-            color: #FFCA28;
+            background-color: #333;
+            font-weight: bold;
         }
 
-        tr:nth-child(even) {
-            background-color: #1B1B1B;
+        .crypto-table td {
+            font-size: 14px;
+            white-space: nowrap;
         }
 
-        img {
-            width: 100%;
-            max-width: 600px;
-            margin-top: 20px;
-            border: 1px solid #333;
-            border-radius: 5px;
-        }
-
-        a {
-            color: #64B5F6;
+        .crypto-table a {
+            color: #00ff00;
             text-decoration: none;
         }
 
-        a:hover {
+        .crypto-table a:hover {
             text-decoration: underline;
         }
 
-        /* Responsive Styles */
         @media (max-width: 768px) {
-            .sidebar ul {
+            body {
+                font-size: 14px;
+            }
+
+            .navigation {
                 flex-direction: column;
                 align-items: center;
             }
 
             table {
-                font-size: 0.9em;
+                font-size: 12px;
             }
 
             .table-container {
-                overflow-x: scroll;
+                overflow-x: auto;
                 -webkit-overflow-scrolling: touch;
+            }
+
+            .crypto-table td {
+                font-size: 12px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Sidebar Navigation -->
-    <div class="sidebar">
-        <h3>📌 Quick Navigation</h3>
-        <ul>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#domains">Suspended Domains</a></li>
-            <li><a href="#about">About the Scam</a></li>
-            <li><a href="#screenshots">Screenshots</a></li>
-            <li><a href="#crypto">Crypto Addresses</a></li>
-        </ul>
-    </div>
+    <div class="container">
+        <div class="navigation">
+            <a href="#mission">Mission</a>
+            <a href="#suspended">Suspended Domains</a>
+            <a href="#about">About the Scam</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#crypto">Crypto Addresses</a>
+        </div>
 
-    <div class="content">
-        <div class="warning">
-            🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time. We are working on automatically detecting new scam domains as they appear and updating this tracker accordingly.
+        <div class="alert">
+            🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time.
         </div>
 
         <h1>BDEX Scam Domain Tracker</h1>
-        
-        <h2 id="mission">Our Mission</h2>
-        <p><strong>
-        Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains, this page appears in search results.  
-        By listing and tracking these scam domains, we increase awareness and make it harder for scammers of the BDEX Trading Platform to operate under new names.
-        </strong></p>
 
-        <h2 id="domains">Suspended Scam Domains (Newest to Oldest)</h2>
+        <h2 id="mission">Our Mission</h2>
+        <p>
+            Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains,
+            this page appears in search results. By listing and tracking these scam domains, we increase awareness and make it harder
+            for scammers of the BDEX Trading Platform to operate under new names.
+        </p>
+
+        <h2 id="suspended">Suspended Scam Domains (Newest to Oldest)</h2>
         <div class="table-container">
             <table>
                 <tr>
@@ -194,7 +162,7 @@
 
         <h2 id="crypto">Crypto Deposit Addresses</h2>
         <div class="table-container">
-            <table>
+            <table class="crypto-table">
                 <tr>
                     <th>Cryptocurrency</th>
                     <th>Address</th>
@@ -205,10 +173,16 @@
                     <td>Bitcoin (BTC)</td>
                     <td>bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp</td>
                     <td>Over $1.4M in BTC</td>
-                    <td><a href="https://www.blockchain.com/explorer/addresses/btc/bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp" target="_blank">View on Blockchain Explorer</a></td>
+                    <td><a href="https://www.blockchain.com/explorer" target="_blank">View on Blockchain Explorer</a></td>
                 </tr>
             </table>
         </div>
+
+        <h2 id="about">About This Scam</h2>
+        <p>
+            The BDEX trading platform is a fraudulent operation that has repeatedly registered new domains through GNAME to evade detection.
+            Victims are lured into depositing funds, only to be prevented from withdrawing their money.
+        </p>
     </div>
 
 </body>
