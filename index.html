@@ -32,6 +32,45 @@
             color: #64B5F6;
         }
 
+        /* Sidebar Navigation */
+        .sidebar {
+            position: fixed;
+            left: 10px;
+            top: 50px;
+            width: 200px;
+            background: #1E1E1E;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .sidebar h3 {
+            color: #FFCA28;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin: 10px 0;
+        }
+
+        .sidebar a {
+            color: #64B5F6;
+            text-decoration: none;
+            font-size: 1em;
+            display: block;
+            padding: 5px;
+        }
+
+        .sidebar a:hover {
+            background: #333;
+            border-radius: 3px;
+        }
+
         /* Warning Box */
         .warning {
             background-color: #FFCA28;
@@ -84,68 +123,88 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Push content right to make space for sidebar */
+        .content {
+            margin-left: 220px;
+        }
     </style>
 </head>
 <body>
-    <div class="warning">
-        🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time. We are working on automatically detecting new scam domains as they appear and updating this tracker accordingly.
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h3>📌 Quick Navigation</h3>
+        <ul>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#domains">Suspended Domains</a></li>
+            <li><a href="#about">About the Scam</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#crypto">Crypto Addresses</a></li>
+        </ul>
     </div>
 
-    <h1>BDEX Scam Domain Tracker</h1>
-    
-    <h2>Our Mission</h2>
-    <p><strong>
-Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains, this page appears in search results.  
-By listing and tracking these scam domains, we increase awareness and make it harder for scammers of the BDEX Trading Platform to operate under new names.
-</strong></p>
+    <div class="content">
+        <div class="warning">
+            🚀 TODO: This page will soon be fully automated to track and update BDEX Trading scam domains in real-time. We are working on automatically detecting new scam domains as they appear and updating this tracker accordingly.
+        </div>
 
-    <h2>Suspended Scam Domains (Newest to Oldest)</h2>
-    <table>
-        <tr>
-            <th>Domain</th>
-            <th>Creation Date</th>
-            <th>Registrar</th>
-            <th>IP</th>
-            <th>Status</th>
-        </tr>
-        <tr><td>bteglobalx.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.94.59</td><td>Suspended</td></tr>
-        <tr><td>BapPxtDe.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-        <tr><td>bwebglobalex.com</td><td>2025-01-23</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended (after delay)</td></tr>
-        <tr><td>bdexxtps.com</td><td>2025-01-22</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-        <tr><td>bdesxtp.com</td><td>2024-12-16</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-        <tr><td>bdswg.com</td><td>2024-07-25</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
-    </table>
+        <h1>BDEX Scam Domain Tracker</h1>
+        
+        <h2 id="mission">Our Mission</h2>
+        <p><strong>
+        Our goal is to make sure that when potential BDEX Trading scam victims search Google for newly created fraudulent domains, this page appears in search results.  
+        By listing and tracking these scam domains, we increase awareness and make it harder for scammers of the BDEX Trading Platform to operate under new names.
+        </strong></p>
 
-    <h2>About This Scam</h2>
-    <p>The BDEX trading platform is a fraudulent operation that has repeatedly registered new domains through GNAME to evade detection. Victims are lured into depositing funds, only to be prevented from withdrawing their money.</p>
-    <p><strong>Stay alert and do not trust any site associated with this operation.</strong></p>
+        <h2 id="domains">Suspended Scam Domains (Newest to Oldest)</h2>
+        <table>
+            <tr>
+                <th>Domain</th>
+                <th>Creation Date</th>
+                <th>Registrar</th>
+                <th>IP</th>
+                <th>Status</th>
+            </tr>
+            <tr><td>bteglobalx.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.94.59</td><td>Suspended</td></tr>
+            <tr><td>BapPxtDe.com</td><td>2025-01-27</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+            <tr><td>bwebglobalex.com</td><td>2025-01-23</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended (after delay)</td></tr>
+            <tr><td>bdexxtps.com</td><td>2025-01-22</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+            <tr><td>bdesxtp.com</td><td>2024-12-16</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+            <tr><td>bdswg.com</td><td>2024-07-25</td><td>GNAME</td><td>34.54.144.131</td><td>Suspended</td></tr>
+        </table>
 
-    <h2>Scam Website Screenshots</h2>
-    <p>Here are actual screenshots of the fraudulent site to help identify similar scams.</p>
+        <h2 id="about">About This Scam</h2>
+        <p>The BDEX trading platform is a fraudulent operation that has repeatedly registered new domains through GNAME to evade detection. Victims are lured into depositing funds, only to be prevented from withdrawing their money.</p>
+        <p><strong>Stay alert and do not trust any site associated with this operation.</strong></p>
 
-    <h3>Homepage</h3>
-    <img src="bdex-home.png" alt="BDEX Scam Homepage">
+        <h2 id="screenshots">Scam Website Screenshots</h2>
+        <p>Here are actual screenshots of the fraudulent site to help identify similar scams.</p>
 
-    <h3>Deposit Page</h3>
-    <img src="bdex-deposit.png" alt="BDEX Scam Deposit Address">
+        <h3>Homepage</h3>
+        <img src="bdex-home.png" alt="BDEX Scam Homepage">
+
+        <h3>Deposit Page</h3>
+        <img src="bdex-deposit.png" alt="BDEX Scam Deposit Address">
+
+        <h2 id="crypto">Crypto Deposit Addresses</h2>
+        <p>Below is a cryptocurrency deposit address associated with this fraudulent scam operation. If you encounter this address, it is likely being used to receive stolen funds.</p>
+
+        <table>
+            <tr>
+                <th>Cryptocurrency</th>
+                <th>Address</th>
+                <th>Total Received</th>
+                <th>Blockchain Explorer</th>
+            </tr>
+            <tr>
+                <td>Bitcoin (BTC)</td>
+                <td>bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp</td>
+                <td>Over $1.4M in BTC</td>
+                <td><a href="https://www.blockchain.com/explorer/addresses/btc/bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp" target="_blank">View on Blockchain Explorer</a></td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 </html>
-
-
-<h2>Crypto Deposit Addresses</h2>
-<p>Below is a cryptocurrency deposit address associated with this fraudulent scam operation. If you encounter this address, it is likely being used to receive stolen funds.</p>
-
-<table>
-    <tr>
-        <th>Cryptocurrency</th>
-        <th>Address</th>
-        <th>Total Received</th>
-        <th>Blockchain Explorer</th>
-    </tr>
-    <tr>
-        <td>Bitcoin (BTC)</td>
-        <td>bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp</td>
-        <td>Over $1.4M in BTC</td>
-        <td><a href="https://www.blockchain.com/explorer/addresses/btc/bc1qy8t7yrm838mha5l0g0pxpagmadd6hxuzkej4lp" target="_blank">View on Blockchain Explorer</a></td>
-    </tr>
-</table>
