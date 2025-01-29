@@ -33,24 +33,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Highlighted TODO Section */
-.todo {
-    background: #b8860b; /* Dark gold color */
-    color: #fff; /* White text for contrast */
-    padding: 15px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 8px;
-    margin: 20px;
-    border: 2px solid #daa520; /* Optional: Add a border with a lighter gold */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-}
 
-.todo h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #fff; /* Ensure the heading is also white */
-}
 
 /* Sections */
 section {
