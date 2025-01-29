@@ -146,3 +146,20 @@ a:hover {
     border: 2px solid #ffcc00;
     margin: 10px 0;
 }
+
+/* Fraud Alert Banner */
+.fraud-alert-banner {
+    text-align: center;
+    padding: 15px;
+    background: #b8860b;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.fraud-alert-banner img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5));
+}
