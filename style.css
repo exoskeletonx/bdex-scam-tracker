@@ -129,22 +129,24 @@ a:hover {
     border: 2px solid #ffcc00;
     margin: 10px 0;
 
-    
-/* Fraud Alert Banner - Properly Centers Image */
+/* Fraud Alert Banner - Full Width & Proper Centering */
 .fraud-alert-banner {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Ensures vertical alignment */
     padding: 20px 0;
     background: #1e1e1e;
     border-bottom: 2px solid #ffcc00;
-    text-align: center; /* Fallback */
+    text-align: center;
 }
 
+/* Fraud Alert Image - No Weird Offsets */
 .fraud-alert-banner img {
-    max-width: 150px; /* Adjust size */
+    max-width: 200px; /* Adjust if necessary */
     height: auto;
     display: block;
+    margin: 0 auto; /* Forces centering */
+    object-fit: contain; /* Ensures no extra white space */
 }
 
