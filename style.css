@@ -146,21 +146,23 @@ a:hover {
     border: 2px solid #ffcc00;
     margin: 10px 0;
 
-/* Fraud Alert Banner */
-.fraud-alert-banner {
+/* Fraud Alert Banner */.fraud-alert-banner {
     text-align: center;
-    padding: 15px;
+    padding: 10px; /* Reduced padding */
     background: #1e1e1e; 
-    border-bottom: 3px solid #ffcc00;
-    margin-top: 20px; /* Optional margin */
-}
-
-.fraud-alert-banner img {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+    border-bottom: 2px solid #ffcc00; /* Slightly thinner border */
+    margin-top: 10px; /* Reduced margin */
+}.fraud-alert-banner img {
+    width: 60px;   /* Adjust as needed */
+    height: 60px;  /* Adjust as needed */
     object-fit: contain; /* or cover, fill, scale-down */
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5));
-    background: none; /* Remove any image background */
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); /* Smaller shadow */
+    background: none; 
 }
+
+/* Optional: If you want to remove the banner entirely */
+/*.fraud-alert-banner {
+    display: none; 
+}*/
