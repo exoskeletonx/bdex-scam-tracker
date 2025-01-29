@@ -156,8 +156,8 @@ a:hover {
 }
 
 .fraud-alert-banner img {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
     object-fit: contain; /* or cover, fill, scale-down */
     display: block;
     margin: 0 auto;
