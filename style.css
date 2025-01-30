@@ -128,33 +128,31 @@ a:hover {
     border-radius: 10px;
     border: 2px solid #ffcc00;
     margin: 10px 0;
-
-/* Fraud Alert Container - Ensures Centering */
+}
+/* Fraud Alert Container - Ensure Full Width & Centering */
 .fraud-alert-container {
     width: 100%;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px 0;
     background: #1e1e1e;
     border-bottom: 2px solid #ffcc00;
-    text-align: center;
+    text-align: center; /* Fallback */
 }
 
-/* Fraud Alert Banner - Ensures Image Stays Centered */
+/* Fraud Alert Banner */
 .fraud-alert-banner {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: column !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Fraud Alert Image - Forces Center */
+/* Image Centering */
 .fraud-alert-banner img {
-    display: block !important;
-    max-width: 200px !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    object-fit: contain !important;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
