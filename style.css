@@ -129,30 +129,53 @@ a:hover {
     border: 2px solid #ffcc00;
     margin: 10px 0;
 }
-/* Fraud Alert Container - Ensure Full Width & Centering */
+/* Fraud Alert Container - Full Width & Centered */
 .fraud-alert-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
     background: #1e1e1e;
+    border-top: 2px solid #ffcc00;
     border-bottom: 2px solid #ffcc00;
-    text-align: center; /* Fallback */
+    position: relative;
 }
 
-/* Fraud Alert Banner */
+/* Fraud Alert Banner (Center Image) */
 .fraud-alert-banner {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Image Centering */
 .fraud-alert-banner img {
-    max-width: 200px;
+    max-width: 150px; /* Adjusted for balance */
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
+/* Mission Box (Inside Fraud Alert Area, Positioned Left) */
+.mission-box {
+    position: absolute;
+    left: 20px; /* Keeps it in the left corner */
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+    width: 250px; 
+    background: #1e1e1e;
+    padding: 10px;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 12px; 
+    line-height: 1.4;
+}
+
+/* Mission Box Header */
+.mission-box h2 {
+    color: #ffcc00;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 8px;
+}
