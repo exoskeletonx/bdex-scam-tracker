@@ -129,7 +129,8 @@ a:hover {
     border: 2px solid #ffcc00;
     margin: 10px 0;
 }
-/* Fraud Alert Container - Full Width & Centered */
+
+/* Default - Desktop Layout */
 .fraud-alert-container {
     width: 100%;
     display: flex;
@@ -142,33 +143,27 @@ a:hover {
     position: relative;
 }
 
-/* Fraud Alert Banner (Center Image) */
-.fraud-alert-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Fraud Alert Image - Centered */
 .fraud-alert-banner img {
-    max-width: 150px; /* Adjusted for balance */
+    max-width: 150px;
     height: auto;
     display: block;
     margin: auto;
 }
 
-/* Mission Box (Inside Fraud Alert Area, Positioned Left) */
+/* Mission Box (Positioned Left on Desktop) */
 .mission-box {
     position: absolute;
-    left: 20px; /* Keeps it in the left corner */
+    left: 20px;
     top: 50%;
-    transform: translateY(-50%); /* Centers it vertically */
-    width: 250px; 
+    transform: translateY(-50%);
+    width: 250px;
     background: #1e1e1e;
     padding: 10px;
     border: 2px solid #ffcc00;
     border-radius: 8px;
     text-align: left;
-    font-size: 12px; 
+    font-size: 12px;
     line-height: 1.4;
 }
 
@@ -179,3 +174,27 @@ a:hover {
     text-align: center;
     margin-bottom: 8px;
 }
+
+/* Mobile Fix */
+@media screen and (max-width: 768px) {
+    .fraud-alert-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .mission-box {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 90%; /* Takes most of the screen width */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .fraud-alert-banner img {
+        max-width: 120px; /* Slightly smaller for mobile */
+    }
+}
+
