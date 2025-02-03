@@ -33,8 +33,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
-
 /* Sections */
 section {
     padding: 20px;
@@ -106,6 +104,7 @@ td {
     color: #ffcc00; /* Yellow (for unknown/unverified status) */
     font-weight: bold;
 }
+
 /* Links */
 a {
     color: #ffcc00;
@@ -182,7 +181,6 @@ a:hover {
         align-items: center;
         padding: 20px;
     }
-
     .mission-box {
         position: relative;
         left: auto;
@@ -192,9 +190,7 @@ a:hover {
         text-align: center;
         margin-bottom: 15px;
     }
-
     .fraud-alert-banner img {
         max-width: 120px; /* Slightly smaller for mobile */
     }
 }
-
