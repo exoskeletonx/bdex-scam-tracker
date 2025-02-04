@@ -194,3 +194,14 @@ a:hover {
         max-width: 120px; /* Slightly smaller for mobile */
     }
 }
+
+.note {
+    font-size: 14px;
+    font-style: italic;
+    color: #ffcc00;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    opacity: 0.85;
+}
+
