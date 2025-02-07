@@ -35,7 +35,11 @@
 <link href="style.css?v=2" rel="stylesheet"/>
 <!-- Performance & Security -->
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="default-src 'self'; img-src *; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; style-src 'self' 'unsafe-inline';" http-equiv="Content-Security-Policy"/>
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; 
+               img-src *; 
+               script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; 
+               style-src 'self' 'unsafe-inline';">
 <!-- Favicons (Optional) -->
 <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
 <link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
